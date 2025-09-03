@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna's Portfolio</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <h3>Anna Rose Thomas</h3>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" id="mobile-menu-button">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <img src="profile.png" alt="Professional portrait of Anna" />
+      <h2>Hello, I am Anna Rose Thomas</h2>
+      <p>Aspiring Software Developer | Student</p>
+      <button onclick="scrollToSection('contact')">Get In Touch</button>
+      <div class="scroll-hint">Scroll down to explore</div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section bg-white">
+    <div class="about-container">
+    <div class="animated-border"></div>
+      <h2>About Me</h2>
+      <div class="about-text">
+        <p>I’m Anna Rose Thomas, a final-year Computer Science engineering student passionate about building impactful software solutions.</p>
+        <p> My interests span Android development, AI-powered applications, and innovative system design. I enjoy turning ideas into real-world projects that are creative, practical, and user-friendly. 🚀</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section bg-light">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="animated-border-blue"></div>
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill python" style="width: 95%;"></div>
+          </div>
+          <span class="skill-percent">95%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill javascript" style="width: 80%;"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Java</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill java" style="width: 85%;"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">C</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill cpp" style="width: 80%;"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Frameworks & Technologies</h3>
+        <div class="skill">
+          <span class="skill-name">React</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill react" style="width: 80%;"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Node.js</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill node" style="width: 75%;"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Git & GitHub</span>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill tensorflow" style="width: 75%;"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section bg-white">
+    <h2>Featured Projects</h2>
+    <div class="projects-filter">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="web">Web Dev</button>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <div class="project-card web">
+        <img src="medcart.png" alt="E-commerce website screenshot" />
+        <h3 class="project-title">MedCart</h3>
+        <p class="project-desc"> A hospital crash-cart management system integrating QR-based medicine tracking, automated restocking, and patient-linked dispensing, built with React, Node.js and MySQL</p>
+        <a href="https://github.com/anna-rose-004/MedCart" class="project-link">View Details</a>
+      </div>
+      <div class="project-card">
+        <img src="headlines.png" alt="AI dashboard screenshot" />
+        <h3 class="project-title">HeadlinesHub- News Aggregator</h3>
+        <p class="project-desc">A sleek JavaScript-powered news aggregator that fetches and displays the latest headlines seamlessly via a modern web interface.</p>
+        <a href="https://github.com/anna-rose-004/HeadlinesHub" class="project-link">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships" class="section bg-light">
+    <h2>Professional Internships</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="internship.jpeg" alt="Tech corporation headquarters" />
+        <h3>Python Intern | Keltron knowledge Center</h3>
+        <p>Developed Python applications with MySQL integration, implemented GUI features, and applied core programming concepts during a two-week internship at Keltron.</p>
+        <span>June 2024 - July 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section custom-contact-bg">
+  <div class="custom-contact-container">
+    <div class="custom-contact-info">
+      <h2 class="custom-contact-title">Get in touch with me!</h2>
+      <p><span class="contact-icon">📧</span> inboxtoanna@gmail.com</p>
+      <p><span class="contact-icon">📍</span> Kottayam, Kerala</p>
+      <p><span class="contact-icon">☎</span> (+91) 9061631176</p>
+      <div class="contact-social-row">
+        <span class="contact-icon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon-img">
+        </span>
+        <a href="https://www.linkedin.com/in/anna-rose-thomas-1b2001280/" target="_blank">anna-rose-thomas</a>
+      </div>
+      <div class="contact-social-row">
+        <span class="contact-icon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon-img">
+        </span>
+        <a href="https://github.com/anna-rose-004" target="_blank">anna-rose-004</a>
+      </div>
+      <div class="contact-social-row">
+        <span class="contact-icon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon-img">
+        </span>
+        <a href="https://www.instagram.com/_.anna_thomas_?igsh=dmVyeGw5emhzOTlt" target="_blank">_.anna_thomas_</a>
+      </div>
+    </div>
+    <form id="contact-form" class="custom-contact-form" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="username@domain.com" required />
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="6" placeholder="Please enter your message. I welcome any and all feedback." required></textarea>
+      <button type="submit" class="custom-submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/anna-rose-thomas-1b2001280/" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://github.com/anna-rose-004" aria-label="GitHub">GitHub</a>
+      <a href="https://www.instagram.com/_.anna_thomas_?igsh=dmVyeGw5emhzOTlt" aria-label="Portfolio">Instagram</a>
+    </div>
+    <p>© 2025 Anna Rose Thomas. All rights reserved. | Crafted with passion for innovation.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+      mobileMenuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('show');
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          if (mobileMenu.classList.contains('show')) {
+            mobileMenu.classList.remove('show');
+            mobileMenuButton.setAttribute('aria-expanded', false);
+          }
+        }
+      });
+    });
+
+    // Project filtering
+    const filterButtons = document.querySelectorAll('.projects-filter button');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Contact form submission (placeholder)
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you for your message! I\'ll get back to you soon.');
+      contactForm.reset();
+    });
+
+    // Scroll to section helper
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
